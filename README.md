@@ -1,5 +1,10 @@
 # DPI Engine - Deep Packet Inspection System
 
+[![CI Build & Test](https://github.com/ganiharpruthviraj-lgtm/DPI-Engine-Deep-Packet-Inspection-System/actions/workflows/ci.yml/badge.svg)](https://github.com/ganiharpruthviraj-lgtm/DPI-Engine-Deep-Packet-Inspection-System/actions)
+![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey)
+
 
 This document explains **everything** about this project - from basic networking concepts to the complete code architecture. After reading this, you should understand exactly how packets flow through the system without needing to read the code.
 
@@ -872,7 +877,12 @@ Connection to YouTube:
 
 ### Build Commands
 
-**Simple Version:**
+**Using CMake (Recommended, Cross-Platform):**
+\\ash
+cmake -B build
+cmake --build build --config Release
+\
+**Simple Version (Direct Compiler):**
 ```bash
 g++ -std=c++17 -O2 -I include -o dpi_simple \
     src/main_working.cpp \
