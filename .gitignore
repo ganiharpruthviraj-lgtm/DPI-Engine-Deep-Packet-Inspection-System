@@ -1,0 +1,24 @@
+# Binaries and compiled files
+build/
+bin/
+*.exe
+*.out
+*.o
+*.obj
+dpi_engine
+
+# Output captures (runtime artifacts)
+output.pcap
+
+# Visual Studio & IDE files
+.vs/
+.vscode/
+.idea/
+*.swp
+*.user
+*.suo
+CMakeSettings.json
+
+# Python artifacts
+__pycache__/
+*.py[cod]
